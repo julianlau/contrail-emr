@@ -1,0 +1,36 @@
+2015-09-08 09:56:15.477 [main] INFO contrail.FastqPreprocessor - Tool name: FastqPreprocessor
+2015-09-08 09:56:15.479 [main] INFO contrail.FastqPreprocessor -  - input: s3://jlcontrail/input/
+2015-09-08 09:56:15.479 [main] INFO contrail.FastqPreprocessor -  - output: s3://jlcontrail/assembly/00-preprocess
+2015-09-08 09:56:15.592 [main] INFO org.apache.hadoop.conf.Configuration.deprecation - mapred.task.timeout is deprecated. Instead, use mapreduce.task.timeout
+2015-09-08 09:56:16.871 [main] INFO org.apache.hadoop.conf.Configuration.deprecation - mapred.line.input.format.linespermap is deprecated. Instead, use mapreduce.input.lineinputformat.linespermap
+2015-09-08 10:21:14.821 [main] INFO contrail.FastqPreprocessor - Tool name: FastqPreprocessor
+2015-09-08 10:21:14.823 [main] INFO contrail.FastqPreprocessor -  - input: s3n://jlcontrail/input/
+2015-09-08 10:21:14.823 [main] INFO contrail.FastqPreprocessor -  - output: s3n://jlcontrail/assembly/00-preprocess
+2015-09-08 10:21:14.919 [main] INFO org.apache.hadoop.conf.Configuration.deprecation - mapred.task.timeout is deprecated. Instead, use mapreduce.task.timeout
+2015-09-08 10:21:15.886 [main] INFO org.apache.hadoop.conf.Configuration.deprecation - mapred.line.input.format.linespermap is deprecated. Instead, use mapreduce.input.lineinputformat.linespermap
+2015-09-08 10:21:15.886 [main] INFO org.apache.hadoop.conf.Configuration.deprecation - fs.default.name is deprecated. Instead, use fs.defaultFS
+2015-09-08 10:28:02.278 [main] INFO contrail.FastqPreprocessor - Tool name: FastqPreprocessor
+2015-09-08 10:28:02.279 [main] INFO contrail.FastqPreprocessor -  - input: s3n://jlcontrail/input/
+2015-09-08 10:28:02.279 [main] INFO contrail.FastqPreprocessor -  - output: s3n://jlcontrail/assembly/00-preprocess
+2015-09-08 10:28:02.388 [main] INFO org.apache.hadoop.conf.Configuration.deprecation - mapred.task.timeout is deprecated. Instead, use mapreduce.task.timeout
+2015-09-08 10:28:03.339 [main] INFO org.apache.hadoop.conf.Configuration.deprecation - mapred.line.input.format.linespermap is deprecated. Instead, use mapreduce.input.lineinputformat.linespermap
+2015-09-08 10:38:04.255 [main] INFO contrail.FastqPreprocessor - Tool name: FastqPreprocessor
+2015-09-08 10:38:04.256 [main] INFO contrail.FastqPreprocessor -  - input: input
+2015-09-08 10:38:04.256 [main] INFO contrail.FastqPreprocessor -  - output: assembly/00-preprocess
+2015-09-08 10:38:04.328 [main] INFO org.apache.hadoop.conf.Configuration.deprecation - mapred.task.timeout is deprecated. Instead, use mapreduce.task.timeout
+2015-09-08 10:38:05.209 [main] INFO org.apache.hadoop.conf.Configuration.deprecation - mapred.line.input.format.linespermap is deprecated. Instead, use mapreduce.input.lineinputformat.linespermap
+2015-09-08 10:38:05.366 [main] INFO org.apache.hadoop.yarn.client.RMProxy - Connecting to ResourceManager at ip-172-31-1-196.ap-southeast-1.compute.internal/172.31.1.196:8032
+2015-09-08 10:38:05.633 [main] INFO org.apache.hadoop.yarn.client.RMProxy - Connecting to ResourceManager at ip-172-31-1-196.ap-southeast-1.compute.internal/172.31.1.196:8032
+2015-09-08 11:47:37.308 [main] INFO contrail.FastqPreprocessor - Tool name: FastqPreprocessor
+2015-09-08 11:47:37.309 [main] INFO contrail.FastqPreprocessor -  - input: s3n://jlcontrail/input/
+2015-09-08 11:47:37.309 [main] INFO contrail.FastqPreprocessor -  - output: s3n://jlcontrail/assembly/00-preprocess
+2015-09-08 11:47:37.417 [main] INFO org.apache.hadoop.conf.Configuration.deprecation - mapred.task.timeout is deprecated. Instead, use mapreduce.task.timeout
+2015-09-08 11:47:38.437 [main] INFO org.apache.hadoop.conf.Configuration.deprecation - mapred.line.input.format.linespermap is deprecated. Instead, use mapreduce.input.lineinputformat.linespermap
+2015-09-08 11:47:38.510 [main] INFO org.apache.hadoop.yarn.client.RMProxy - Connecting to ResourceManager at ip-172-31-1-196.ap-southeast-1.compute.internal/172.31.1.196:8032
+2015-09-08 11:47:38.804 [main] INFO org.apache.hadoop.yarn.client.RMProxy - Connecting to ResourceManager at ip-172-31-1-196.ap-southeast-1.compute.internal/172.31.1.196:8032
+2015-09-08 11:47:40.044 [main] INFO com.amazon.ws.emr.hadoop.fs.EmrFileSystem - Consistency disabled, using com.amazon.ws.emr.hadoop.fs.s3n.S3NativeFileSystem as filesystem implementation
+2015-09-08 11:47:40.252 [main] INFO amazon.emr.metrics.MetricsSaver - MetricsConfigRecord disabledInCluster: false instanceEngineCycleSec: 60 clusterEngineCycleSec: 60 disableClusterEngine: false maxMemoryMb: 3072 maxInstanceCount: 500 lastModified: 1441702592123 
+2015-09-08 11:47:40.252 [main] INFO amazon.emr.metrics.MetricsSaver - Created MetricsSaver j-CND5MDUF803R:i-b15d8d15:RunJar:25668 period:60 /mnt/var/em/raw/i-b15d8d15_20150908_RunJar_25668_raw.bin
+2015-09-08 11:47:40.611 [main] INFO com.amazonaws.latency - StatusCode=[200], ServiceName=[Amazon S3], AWSRequestID=[2F5EA7FDA44B629C], ServiceEndpoint=[https://jlcontrail.s3.amazonaws.com], HttpClientPoolLeasedCount=0, RequestCount=1, HttpClientPoolPendingCount=0, HttpClientPoolAvailableCount=0, ClientExecuteTime=[331.983], HttpRequestTime=[266.625], HttpClientReceiveResponseTime=[13.762], RequestSigningTime=[29.594], ResponseProcessingTime=[0.437], HttpClientSendRequestTime=[1.207], 
+2015-09-08 11:47:40.630 [main] INFO com.amazonaws.latency - StatusCode=[404], Exception=[com.amazonaws.services.s3.model.AmazonS3Exception: Not Found (Service: Amazon S3; Status Code: 404; Error Code: 404 Not Found; Request ID: 0F7780EC6896E705), S3 Extended Request ID: GthKyhspq5Op3uoD1rSsA8tzsYFpV+ccGhnZ0acv8+RvsncURwSJvo/geQnvhvcFXNzyMBwIlP8=], ServiceName=[Amazon S3], AWSErrorCode=[404 Not Found], AWSRequestID=[0F7780EC6896E705], ServiceEndpoint=[https://jlcontrail.s3.amazonaws.com], Exception=1, HttpClientPoolLeasedCount=0, RequestCount=1, HttpClientPoolPendingCount=0, HttpClientPoolAvailableCount=1, ClientExecuteTime=[15.338], HttpRequestTime=[12.492], HttpClientReceiveResponseTime=[9.355], RequestSigningTime=[0.869], HttpClientSendRequestTime=[0.995], 
+2015-09-08 11:47:40.672 [main] INFO com.amazonaws.latency - StatusCode=[200], ServiceName=[Amazon S3], AWSRequestID=[88D0919C633E098A], ServiceEndpoint=[https://jlcontrail.s3.amazonaws.com], HttpClientPoolLeasedCount=0, RequestCount=1, HttpClientPoolPendingCount=0, HttpClientPoolAvailableCount=1, ClientExecuteTime=[42.074], HttpRequestTime=[14.668], HttpClientReceiveResponseTime=[11.27], RequestSigningTime=[0.934], ResponseProcessingTime=[25.743], HttpClientSendRequestTime=[1.008], 
