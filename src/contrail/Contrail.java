@@ -139,7 +139,12 @@ public class Contrail extends Configured implements Tool
 	
 	public void cleanup(String path) throws IOException
 	{
-		FileSystem.get(baseconf).delete(new Path(path), true);
+		try
+		{
+			FileSystem.get(new java.net.URI(path), baseconf).delete(new Path(path), true);
+		} catch (Exception ex) {
+			System.out.println("Exception in cleanup: " + ex.toString() + ". We just keep the folder there: " + path + "\n");
+		}
 	}
 	
 	public void save_result(String base, String opath, String npath) throws IOException
@@ -148,8 +153,19 @@ public class Contrail extends Configured implements Tool
 		
 		msg("Save result to " + npath + "\n\n");
 		
-		FileSystem.get(baseconf).delete(new Path(base+npath), true);
-		FileSystem.get(baseconf).rename(new Path(base+opath), new Path(base+npath));
+		try
+		{
+			FileSystem.get(new java.net.URI(base+npath), baseconf).delete(new Path(base+npath), true);
+		} catch (Exception ex) {
+			System.out.println("Exception in save_result: " + ex.toString() + ". We just keep the folder there: " + base + npath + "\n");
+		}
+		try 
+		{
+			FileSystem.get(new java.net.URI(base+opath), baseconf).rename(new Path(base+opath), new Path(base+npath));
+		} catch (Exception ex) {
+			System.out.println("Excpetion in save_result for renew: " + ex.toString() + ". We try to continue here with the opath: " + base + opath + " and new path here: " + base + npath + "\n");
+		}
+
 	}
 	
 	
@@ -166,7 +182,7 @@ public class Contrail extends Configured implements Tool
 		msg("\n\nStats " + dir + "\n");
 		msg("==================================================================================\n");
 		
-		FSDataInputStream statstream = FileSystem.get(baseconf).open(new Path(base+dir+".stats/part-00000"));
+		FSDataInputStream statstream = FileSystem.get(new java.net.URI(base+dir+".stats/part-00000"), baseconf).open(new Path(base+dir+".stats/part-00000"));
 		BufferedReader b = new BufferedReader(new InputStreamReader(statstream));
 
 		String s;

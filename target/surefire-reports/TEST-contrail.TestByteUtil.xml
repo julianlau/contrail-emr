@@ -58,6 +58,6 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase time="0" classname="contrail.TestByteUtil" name="testreplaceMultiByteChars"/>
   <testcase time="0" classname="contrail.TestByteUtil" name="testhasMultiByteChars"/>
+  <testcase time="0" classname="contrail.TestByteUtil" name="testreplaceMultiByteChars"/>
 </testsuite>
